@@ -1,0 +1,141 @@
+.app_line {
+  display: grid;
+  padding-top: 10px;
+  background-color: black;
+  padding-bottom: 10px;
+  grid-template-columns: auto auto auto 1fr auto auto auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  align-items: center;
+  grid-gap: 10px;
+}
+.app_line i {
+  color: white;
+}
+.app_line i:hover {
+  color: red;
+}
+.app_line .sub_app_button {
+  background-color: white;
+}
+.app_line p.prompt {
+  padding-bottom: 5px;
+}
+.app_line i.choice_i {
+  padding-left: 10px;
+  text-align: center;
+  padding-right: 10px;
+}
+.app_line input {
+  display: inline-block;
+  padding: 0;
+  border: none;
+}
+.app_line button {
+  color: white;
+  border: 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.app_line button:hover {
+  background-color: gray;
+  transition: 0.5s;
+}
+.app_line .input_line {
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  border-radius: 3px;
+}
+.app_line .sub_choice {
+  display: none;
+}
+.app_line i.micro {
+  color: #3e77aa;
+}
+.app_line label {
+  padding: 0 10px;
+  background-color: white;
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  box-sizing: border-box;
+}
+.app_line label i {
+  padding-right: 10px;
+  color: gray;
+}
+.app_line i.micro:hover {
+  transition: 0.4s;
+  color: #ffa900;
+}
+.app_line .choice_language {
+  color: gray;
+  text-align: center;
+}
+.app_line .choice_language span.language_app:hover {
+  color: white;
+}
+.app_line button.find {
+  background-color: green;
+  border: 0;
+  color: white;
+}
+.app_line .sub_part {
+  display: none;
+}
+.app_line .sub_part .sub_part_under {
+  display: none;
+}
+.app_line a.app {
+  padding-bottom: 5px;
+  text-decoration: none;
+  display: flex;
+  padding-left: 10px;
+  color: #3e77aa;
+}
+.app_line a.app:hover {
+  color: red;
+}
+.app_line a.menu {
+  display: flex;
+  text-decoration: none;
+  color: gray;
+}
+.app_line .veb_prompt_app {
+  color: white;
+  text-align: center;
+}
+.app_line .veb_prompt_app button.prompt {
+  background-color: rebeccapurple;
+  border: 0;
+  color: #ffa900;
+  border-radius: 4px;
+}
+.app_line .sub_part {
+  display: none;
+  background-color: white;
+  color: #3e77aa;
+}
+
+.user_container button.in {
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  border-radius: 5px;
+}
+.user_container p {
+  color: gray;
+}
+.user_container i:hover {
+  color: red;
+}
+.user_container button.how_in {
+  color: #3e77aa;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+

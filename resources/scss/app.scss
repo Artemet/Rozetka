@@ -1,0 +1,142 @@
+.app_line{
+    display: grid;
+    padding-top: 10px;
+    background-color: black;
+    padding-bottom: 10px;
+    i{
+        color: white;
+    }
+    i:hover{
+        color: red;
+    }
+    .sub_app_button{
+        background-color: white;
+    }
+    grid-template-columns: auto auto auto 1fr auto auto auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+    grid-gap: 10px;
+    p.prompt{
+        padding-bottom: 5px;
+    }
+    i.choice_i{
+        padding-left: 10px;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    input{
+        display: inline-block;
+        padding: 0;
+        border: none;
+    }
+    button{
+        color: white;
+        border: 0;
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: hsla(0,0%,100%,.2);
+    }
+    button:hover{
+        background-color: gray;
+        transition: 0.5s;
+    }
+    .input_line{
+        overflow: hidden;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        border-radius: 3px;
+    }
+    .sub_choice{
+        display: none;
+    }
+    i.micro{
+        color: #3e77aa;
+    }
+    label{
+        padding: 0 10px;
+        background-color: white;
+        display: grid;
+        height: 100%;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        box-sizing: border-box;
+        i{
+            padding-right: 10px;
+            color: gray;
+        }
+    }
+    i.micro:hover{
+        transition: 0.4s;
+        color: #ffa900;
+    }
+    .choice_language{
+        color: gray;
+        text-align: center;
+        span.language_app:hover{
+            color: white;
+        }
+    }
+    button.find{
+        background-color: green;
+        border: 0;
+        color: white;
+    }
+    .sub_part{
+        display: none;
+        .sub_part_under{
+            display: none;
+        }
+    }
+    a.app{
+        padding-bottom: 5px;
+        text-decoration: none;
+        display: flex;
+        padding-left: 10px;
+        color: #3e77aa;
+    }
+    a.app:hover{
+        color: red;
+    }
+    a.menu{
+        display: flex;
+        text-decoration: none;
+        color: gray;
+    }
+    .veb_prompt_app{
+        color: white;
+        text-align: center;
+        button.prompt{
+            background-color: rebeccapurple;
+            border: 0;
+            color: #ffa900;
+            border-radius: 4px;
+        }
+    }
+    .sub_part{
+        display: none;
+        background-color: white;
+        color: #3e77aa;
+    }
+}
+.user_container{
+    button.in{
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+        border-radius: 5px;
+    }
+    p{
+        color: gray;
+    }
+    i:hover{
+        color: red;
+    }
+    button.how_in{
+        color: #3e77aa;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+}
