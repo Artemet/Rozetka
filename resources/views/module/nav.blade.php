@@ -206,26 +206,30 @@
                 </div>
             </div>
         </div>
-        <a href="" class="menu">Справочный центр</a>
+        <a href="" class="menu">
+            <i class="far fa-question-circle"></i>
+            Справочный центр</a>
         <div class="in_container">
             <h2>Добро пожаловать!</h2>
             <p>Войдите, чтобы получать рекомендации, <br>
                 персональные бонусы и скидки.</p>
             <button>Войдите в личный кабинет</button>
         </div>
-        <p>Устанавливайте наши приложения</p>
-        <button class="download">
-            <i class="fab fa-google-play"></i>
-            Google play
-        </button>
-        <button class="download">
-            <i class="fab fa-apple"></i>
-            App Store
-        </button>
+        <div class="download_container">
+            <p>Устанавливайте наши приложения</p>
+            <button class="download">
+                <i class="fab fa-google-play"></i>
+                Google play
+            </button>
+            <button class="download">
+                <i class="fab fa-apple"></i>
+                App Store
+            </button>
+        </div>
         <div class="network_container">
             <p>Мы в социальных сетях</p>
             <a class="network" href="https://www.facebook.com/rozetka.ua">
-                <img src="https://clck.ru/Xq3ry" style="height: 50px" alt="" class="network">
+                <img src="https://clck.ru/Xq3ry" alt="" class="network">
             </a>
             <a class="network" href="https://twitter.com/rozetka_ua">
                 <img src="https://igorzuevich.com/wp-content/uploads/2015/03/Twitter.png" alt="" class="network">
@@ -283,14 +287,14 @@
                 <img src="https://xl-static.rozetka.com.ua/assets/img/design/visa-logo.svg" alt="" class="payment">
             </button>
         </div>
-        <p>ТМ используется на основании лицензии <br>
+        <p class="information_one">ТМ используется на основании лицензии <br>
             правообладателя RozetkaLTD.</p>
-        <p>© Интернет-магазин «Розетка™» <br>
+        <p class="information_two">© Интернет-магазин «Розетка™» <br>
             2001–2021</p>
     </div>
     <div class="slider_container">
-        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-left left_arrow"></i>
         <img src="https://content1.rozetka.com.ua/files/images/original/221924075.jpg" alt="" class="slider">
-        <i class="fas fa-chevron-right"></i>
+        <i class="fas fa-chevron-right right_arrow"></i>
     </div>
 </div>

@@ -1,10 +1,25 @@
+@import 'pages/index';
+@import 'models/index';
 .app_line{
     display: grid;
     padding-top: 10px;
     background-color: black;
     padding-bottom: 10px;
+    grid-template-columns: auto auto auto 1fr auto auto auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+    grid-gap: 10px;
     i{
         color: white;
+    }
+    a{
+        color: #3e77aa;
+        text-decoration: none;
+    }
+    a:hover{
+        color: red;
+        transition: 0.5s;
     }
     i:hover{
         color: red;
@@ -12,11 +27,6 @@
     .sub_app_button{
         background-color: white;
     }
-    grid-template-columns: auto auto auto 1fr auto auto auto;
-    padding-left: 80px;
-    padding-right: 80px;
-    align-items: center;
-    grid-gap: 10px;
     p.prompt{
         padding-bottom: 5px;
     }

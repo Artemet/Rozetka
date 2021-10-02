@@ -1,3 +1,137 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.veb_part_container {
+  display: grid;
+  padding-top: 5px;
+  padding-left: 10px;
+  grid-template-columns: auto auto;
+}
+.veb_part_container img.slider {
+  width: 1030px;
+  padding-top: 20px;
+}
+.veb_part_container .download_container {
+  text-align: center;
+}
+.veb_part_container .choice_part {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.veb_part_container .network_container {
+  border-top: 1px solid lightgray;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+.veb_part_container .network_container a:hover {
+  text-decoration: none;
+}
+.veb_part_container .network_container img.network {
+  padding-bottom: 5px;
+  height: 50px;
+  padding-top: 5px;
+}
+.veb_part_container i {
+  color: gray;
+}
+.veb_part_container a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.veb_part_container h2 {
+  padding-bottom: 5px;
+}
+.veb_part_container .slider_container i:hover {
+  color: red;
+}
+
+.in_container {
+  margin-left: 28px;
+  background-color: lightgray;
+  width: 280px;
+  padding: 10px;
+  text-align: center;
+}
+.in_container button {
+  background-color: #3e77aa;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: 1px solid #3e77aa;
+  color: white;
+}
+.in_container button:hover {
+  background-color: #29a1d9;
+  transition: 0.4s;
+}
+
+button.download {
+  background-color: black;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: white;
+}
+button.download i {
+  color: white;
+}
+
+a {
+  color: #3e77aa;
+  text-decoration: none;
+}
+
+.sub_container {
+  border-right: 1px solid lightgray;
+}
+.sub_container p {
+  color: gray;
+  padding-top: 10px;
+}
+.sub_container .sub_choice {
+  padding-left: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.sub_container .sub_choice a.app {
+  padding-left: 5px;
+  display: flex;
+  padding-bottom: 10px;
+}
+.sub_container .sub_choice a.app i {
+  padding-right: 5px;
+}
+.sub_container a.menu {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.sub_container .choice_part a {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+button.payment {
+  border: none;
+  background-color: white;
+}
+
+.payment_container_information {
+  border-top: 1px solid lightgray;
+}
+
+p.information_one {
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+p.information_two {
+  padding-top: 8px;
+  color: black;
+  padding-left: 8px;
+  border-bottom: 1px solid lightgray;
+}
+
 .app_line {
   display: grid;
   padding-top: 10px;
@@ -11,6 +145,14 @@
 }
 .app_line i {
   color: white;
+}
+.app_line a {
+  color: #3e77aa;
+  text-decoration: none;
+}
+.app_line a:hover {
+  color: red;
+  transition: 0.5s;
 }
 .app_line i:hover {
   color: red;
