@@ -292,9 +292,11 @@
         <p class="information_two">© Интернет-магазин «Розетка™» <br>
             2001–2021</p>
     </div>
-    <div class="slider_container">
-        <i class="fas fa-chevron-left left_arrow"></i>
-        <img src="https://content1.rozetka.com.ua/files/images/original/221924075.jpg" alt="" class="slider">
-        <i class="fas fa-chevron-right right_arrow"></i>
+    <div class="content">
+        <div class="slider_container">
+            <i class="fas fa-chevron-left left_arrow"></i>
+            <img src="{{asset('res/slider_one.jpg')}}" alt="" class="slider">
+            <i class="fas fa-chevron-right right_arrow"></i>
+        </div>
     </div>
 </div>
