@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\СategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('/home', function (){
    return view("pages.home.index");
 })->name("home");
+Route::get('/product', function (){
+
+    return view("pages.product");
+})->name("product");
+Route::get('/category', [СategoryController::class, 'index']);

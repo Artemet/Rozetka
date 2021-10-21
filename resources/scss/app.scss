@@ -141,7 +141,11 @@
     p{
         color: gray;
     }
+    i{
+        transition: 0.3s;
+    }
     i:hover{
+        background-color: red;
         color: red;
     }
     button.how_in{

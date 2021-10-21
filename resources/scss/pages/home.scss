@@ -1,6 +1,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.part_product h3{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 22px;
+}
 .veb_part_container{
     display: grid;
     padding-top: 5px;
@@ -37,6 +42,28 @@ body{
         border-bottom: 1px solid lightgray;
         a:hover{
             text-decoration: none;
+        }
+        a.network{
+            font-size: 30px;
+        }
+        i.facebook{
+            color: #3e77aa;
+            border-radius: 30px;
+        }
+        i.twitter{
+            color: #29a1d9;
+        }
+        i.youtube{
+            color: red;
+        }
+        i.instagram{
+            color: #ffd500;
+        }
+        i.viber{
+            color: purple;
+        }
+        i.telegram{
+            color: #29a1d9;
         }
         img.network{
             padding-bottom: 5px;

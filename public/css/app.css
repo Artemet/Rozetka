@@ -2,6 +2,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.part_product h3 {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 22px;
+}
+
 .veb_part_container {
   display: grid;
   padding-top: 5px;
@@ -40,6 +46,28 @@ body {
 }
 .veb_part_container .network_container a:hover {
   text-decoration: none;
+}
+.veb_part_container .network_container a.network {
+  font-size: 30px;
+}
+.veb_part_container .network_container i.facebook {
+  color: #3e77aa;
+  border-radius: 30px;
+}
+.veb_part_container .network_container i.twitter {
+  color: #29a1d9;
+}
+.veb_part_container .network_container i.youtube {
+  color: red;
+}
+.veb_part_container .network_container i.instagram {
+  color: #ffd500;
+}
+.veb_part_container .network_container i.viber {
+  color: purple;
+}
+.veb_part_container .network_container i.telegram {
+  color: #29a1d9;
 }
 .veb_part_container .network_container img.network {
   padding-bottom: 5px;
@@ -151,6 +179,300 @@ p.information_two {
   color: black;
   padding-left: 8px;
   border-bottom: 1px solid lightgray;
+}
+
+.choice_href_line {
+  padding-top: 10px;
+  color: gray;
+  padding-left: 10px;
+}
+.choice_href_line i {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.reviews {
+  padding-left: 10px;
+  color: darkorange;
+  padding-bottom: 10px;
+}
+
+h1.product {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.choice_product_information {
+  display: flex;
+  padding-bottom: 10px;
+  background-color: #e8e7e7;
+  padding-top: 10px;
+}
+.choice_product_information h2 {
+  padding-left: 10px;
+  color: #29a1d9;
+  padding-right: 10px;
+}
+.choice_product_information h2:hover {
+  color: #00a046;
+  text-decoration: underline;
+}
+.choice_product_information span {
+  color: black;
+}
+.choice_product_information h2.start_choice {
+  text-decoration: underline;
+  color: #00a046;
+}
+
+.choice_img {
+  height: 100%;
+  overflow-y: scroll;
+}
+.choice_img .img {
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 49px;
+  width: 49px;
+}
+.choice_img .img img {
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 100%;
+}
+.choice_img .img:hover {
+  border: 1px solid #00a046;
+}
+
+.choice_part span.price_two {
+  color: gray;
+}
+
+.basket_choice .old_price {
+  margin-left: 10px;
+  padding: 2px 10px;
+  position: relative;
+  color: lightgray;
+}
+.basket_choice .old_price:before {
+  content: "";
+  background-color: tomato;
+  transform: translateY(calc(-50% + 3px));
+  top: 50%;
+  height: 1px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.basket_choice .old_price:after {
+  content: "";
+  background-color: tomato;
+  transform: translateY(calc(-50% - 1px));
+  top: 50%;
+  height: 1px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.basket_choice .premium_information_one {
+  padding-top: 10px;
+}
+.basket_choice fieldset {
+  border: 1px solid lightgray;
+}
+
+.buy_box {
+  padding: 14px;
+}
+.buy_box .delivery_container i {
+  color: gray;
+}
+.buy_box .general_information_part {
+  display: flex;
+  padding-top: 10px;
+}
+.buy_box .general_information_part i {
+  padding-right: 5px;
+}
+
+.salesman_information {
+  display: grid;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.salesman_information img {
+  margin-left: 59%;
+}
+.salesman_information p {
+  margin-right: 59%;
+}
+
+.basket_choice button.just_buy {
+  border-radius: 5px;
+  background-color: #00a046;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+.basket_choice button.just_buy i {
+  color: white;
+  padding-right: 5px;
+}
+.basket_choice button {
+  margin: 10px;
+  padding: 10px;
+}
+.basket_choice button.just_buy:hover {
+  background-color: green;
+  transition: 0.4s;
+}
+.basket_choice button.credit_buy {
+  color: white;
+  border-radius: 5px;
+  background-color: #29a1d9;
+  font-size: 20px;
+  border: none;
+}
+.basket_choice button.credit_buy:hover {
+  transition: 0.4s;
+  background-color: #296ad9;
+}
+
+.part_information {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.delivery_container a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.product_container {
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buy_box button.information {
+  margin-bottom: 10px;
+  background-color: #efeaea;
+  color: #00a046;
+  padding: 5px;
+  border: 1px solid #efeaea;
+  border-radius: 5px;
+}
+
+.salesman_information img {
+  max-width: 120px;
+}
+
+.premium_information_one span {
+  color: yellow;
+  background-color: purple;
+}
+
+.main_choice {
+  overflow: hidden;
+  height: 100%;
+}
+.main_choice img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+label.information .line {
+  display: flex;
+}
+
+.basket_choice span.price {
+  color: red;
+  font-size: 36px;
+}
+.basket_choice span.old_price {
+  color: gray;
+}
+
+.premium_information_two {
+  padding: 10px;
+  background-color: purple;
+  align-items: center;
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: auto 1fr auto;
+}
+.premium_information_two span {
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 40px;
+}
+.premium_information_two .premium_information_block p {
+  display: inline-block;
+}
+.premium_information_two p {
+  color: white;
+}
+.premium_information_two p.information {
+  padding-top: 5px;
+  color: yellow;
+}
+.premium_information_two button {
+  border: none;
+  border-radius: 5px;
+  color: #29a1d9;
+  padding: 7px 15px;
+  background-color: #efeaea;
+}
+
+.delivery_part {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.delivery_part img {
+  height: 30px;
+  padding-right: 5px;
+}
+.delivery_part span.text_free {
+  color: #00a046;
+  padding-left: 5px;
+}
+.delivery_part i {
+  padding-right: 5px;
+}
+
+.buy_information {
+  padding-top: 10px;
+}
+.buy_information img {
+  width: 48px;
+  padding: 5px;
+}
+
+.basket_choice i {
+  color: gray;
+}
+.basket_choice i.heart {
+  color: orange;
+}
+
+.product_preview {
+  display: grid;
+  height: 550px;
+  grid-template-columns: auto 1fr;
 }
 
 .app_line {
@@ -293,7 +615,11 @@ p.information_two {
 .user_container p {
   color: gray;
 }
+.user_container i {
+  transition: 0.3s;
+}
 .user_container i:hover {
+  background-color: red;
   color: red;
 }
 .user_container button.how_in {
