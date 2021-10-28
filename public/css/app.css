@@ -181,18 +181,16 @@ p.information_two {
   border-bottom: 1px solid lightgray;
 }
 
+.container > * {
+  padding: 0 32px;
+}
+
 .choice_href_line {
   padding-top: 10px;
   color: gray;
-  padding-left: 10px;
-}
-.choice_href_line i {
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .reviews {
-  padding-left: 10px;
   color: darkorange;
   padding-bottom: 10px;
 }
@@ -201,29 +199,33 @@ h1.product {
   font-size: 30px;
   padding-top: 20px;
   padding-bottom: 10px;
-  padding-left: 10px;
 }
 
 .choice_product_information {
   display: flex;
-  padding-bottom: 10px;
   background-color: #e8e7e7;
-  padding-top: 10px;
 }
 .choice_product_information h2 {
-  padding-left: 10px;
   color: #29a1d9;
-  padding-right: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.choice_product_information h2:after {
+  content: "";
+  height: 1px;
+  margin-top: 10px;
+  display: block;
+}
+.choice_product_information h2:hover:after {
+  background-color: #00a046;
 }
 .choice_product_information h2:hover {
   color: #00a046;
-  text-decoration: underline;
 }
 .choice_product_information span {
   color: black;
 }
 .choice_product_information h2.start_choice {
-  text-decoration: underline;
   color: #00a046;
 }
 
@@ -279,17 +281,46 @@ h1.product {
   position: absolute;
 }
 .basket_choice .premium_information_one {
-  padding-top: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.basket_choice .premium_information_one .circle {
+  border-radius: 50%;
+  color: yellow;
+  height: 1.3em;
+  text-align: center;
+  line-height: 1.3em;
+  width: 1.3em;
+  background-color: purple;
+  display: inline-block;
 }
 .basket_choice fieldset {
   border: 1px solid lightgray;
+  padding: 10px;
+}
+.basket_choice fieldset i {
+  padding: 5px;
+  border-radius: 5px;
+}
+.basket_choice fieldset i:hover {
+  background-color: #d0ecdb;
 }
 
 .buy_box {
   padding: 14px;
 }
+.buy_box .delivery_container {
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+}
 .buy_box .delivery_container i {
   color: gray;
+}
+.buy_box .delivery_container p.information_delivery {
+  padding: 10px;
+}
+.buy_box .delivery_container .delivery_part {
+  padding: 10px;
 }
 .buy_box .general_information_part {
   display: flex;
@@ -349,6 +380,19 @@ h1.product {
 .part_information {
   padding-left: 10px;
   padding-top: 10px;
+  display: flex;
+  padding-bottom: 10px;
+}
+.part_information .block_information {
+  display: grid;
+  padding-left: 5px;
+  grid-template-columns: 1fr;
+}
+
+.part_information_two {
+  padding-left: 10px;
+}
+.part_information_two p {
   padding-bottom: 10px;
 }
 
@@ -362,6 +406,10 @@ h1.product {
   padding-top: 10px;
   grid-template-columns: 1fr 1fr;
 }
+.product_container .general_information_part {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
 
 .buy_box button.information {
   margin-bottom: 10px;
@@ -374,11 +422,6 @@ h1.product {
 
 .salesman_information img {
   max-width: 120px;
-}
-
-.premium_information_one span {
-  color: yellow;
-  background-color: purple;
 }
 
 .main_choice {
@@ -400,13 +443,28 @@ label.information .line {
   color: red;
   font-size: 36px;
 }
+.basket_choice .buy_choice {
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-top: 10px;
+}
+.basket_choice .buy_choice span.line {
+  display: flex;
+  padding-bottom: 10px;
+}
+.basket_choice .buy_choice span.line_under {
+  padding-left: 15px;
+  display: flex;
+  padding-bottom: 10px;
+}
 .basket_choice span.old_price {
   color: gray;
 }
 
 .premium_information_two {
   padding: 10px;
-  background-color: purple;
+  background-color: #471a7b;
   align-items: center;
   display: grid;
   margin-top: 10px;
@@ -415,8 +473,8 @@ label.information .line {
 .premium_information_two span {
   background-color: yellow;
   color: black;
-  padding: 5px;
   margin: 10px;
+  padding: 12px 2px;
   border-radius: 40px;
 }
 .premium_information_two .premium_information_block p {
@@ -456,10 +514,27 @@ label.information .line {
 
 .buy_information {
   padding-top: 10px;
+  display: flex;
 }
 .buy_information img {
   width: 48px;
   padding: 5px;
+}
+.buy_information .box {
+  padding: 6px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  margin-left: 5px;
+  text-align: center;
+}
+.buy_information .box p {
+  font-size: 7px;
+  padding-bottom: 5px;
+}
+.buy_information .box span.b {
+  border-radius: 50%;
+  padding: 2px 5px;
+  background-color: #fed44b;
 }
 
 .basket_choice i {
@@ -473,6 +548,30 @@ label.information .line {
   display: grid;
   height: 550px;
   grid-template-columns: auto 1fr;
+}
+
+.choice_premium_container {
+  text-align: center;
+  background-image: url("/res_css/premium/premium-landing-hero.jpg");
+  padding-top: 30px;
+  background-attachment: fixed;
+}
+.choice_premium_container h1 {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+.choice_premium_container p {
+  color: #f2e312;
+}
+.choice_premium_container button.premium {
+  margin-bottom: 30px;
+  padding: 10px;
+  color: white;
+  margin-top: 12px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #00a046;
 }
 
 .app_line {

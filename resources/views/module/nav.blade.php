@@ -91,8 +91,10 @@
     </div>
     <div class="veb_prompt_app">
         <div class="premium">
-            <p class="prompt">Попробуйте</p>
-            <button class="prompt">премиум!</button>
+            <a href="pages">
+                <p class="prompt">Попробуйте</p>
+                <button class="prompt">премиум!</button>
+            </a>
         </div>
     </div>
     <div class="choice_i">

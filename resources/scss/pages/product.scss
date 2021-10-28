@@ -1,14 +1,11 @@
+.container > *{
+   padding: 0 32px;
+}
 .choice_href_line{
     padding-top: 10px;
     color: gray;
-    padding-left: 10px;
-    i{
-        padding-right: 10px;
-        padding-left: 10px;
-    }
 }
 .reviews{
-    padding-left: 10px;
     color: darkorange;
     padding-bottom: 10px;
 }
@@ -16,27 +13,34 @@ h1.product{
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
-    padding-left: 10px;
 }
 .choice_product_information{
     display: flex;
-    padding-bottom: 10px;
+    //width: 100%;
     background-color: #e8e7e7;
-    padding-top: 10px;
     h2{
-        padding-left: 10px;
         color: #29a1d9;
-        padding-right: 10px;
+        padding-top: 10px;
+        //padding-bottom: 10px;
+        padding-right: 20px;
+    }
+    h2:after{
+        content: "";
+        height: 1px;
+        margin-top: 10px;
+        display: block;
+        //width: 100%;
+    }
+    h2:hover:after{
+        background-color: #00a046;
     }
     h2:hover{
         color: #00a046;
-        text-decoration: underline;
     }
     span{
         color: black;
     }
     h2.start_choice{
-        text-decoration: underline;
         color: #00a046;
     }
 }
@@ -62,6 +66,7 @@ h1.product{
 .choice_part{
     span.price_two{
         color: gray;
+
     }
 }
 .basket_choice{
@@ -83,6 +88,7 @@ h1.product{
         position: absolute;
     }
     .old_price:after{
+
         content: "";
         background-color: tomato;
         transform: translateY(calc(-50% - 1px));
@@ -92,18 +98,48 @@ h1.product{
         right: 0;
         position: absolute;
     }
+    $circle_b: 1.3em;
     .premium_information_one{
-        padding-top: 10px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        .circle{
+            //padding: 2px 7px;
+            border-radius: 50%;
+            color: yellow;
+            height: $circle_b;
+            text-align: center;
+            line-height: $circle_b;
+            width: $circle_b;
+            background-color: purple;
+            display: inline-block;
+        }
     }
     fieldset{
         border: 1px solid lightgray;
+        padding: 10px;
+        i{
+            padding: 5px;
+            border-radius: 5px;
+        }
+        i:hover{
+            background-color: #d0ecdb;
+
+        }
     }
 }
 .buy_box{
     padding: 14px;
     .delivery_container{
+        border: 1px solid lightgray;
+        margin-bottom: 10px;
         i{
             color: gray;
+        }
+        p.information_delivery{
+            padding: 10px;
+        }
+        .delivery_part{
+            padding: 10px;
         }
     }
     .general_information_part{
@@ -164,7 +200,19 @@ h1.product{
 .part_information{
     padding-left: 10px;
     padding-top: 10px;
+    display: flex;
     padding-bottom: 10px;
+    .block_information{
+        display: grid;
+        padding-left: 5px;
+        grid-template-columns: 1fr;
+    }
+}
+.part_information_two{
+    padding-left: 10px;
+    p{
+        padding-bottom: 10px;
+    }
 }
 .delivery_container{
     a:hover{
@@ -176,6 +224,10 @@ h1.product{
     display: grid;
     padding-top: 10px;
     grid-template-columns: 1fr 1fr;
+    .general_information_part{
+        border: 1px solid lightgray;
+        padding: 10px;
+    }
 }
 .buy_box{
     button.information{
@@ -190,12 +242,6 @@ h1.product{
 .salesman_information{
     img{
         max-width: 120px;
-    }
-}
-.premium_information_one{
-    span{
-        color: yellow;
-        background-color: purple;
     }
 }
 .main_choice{
@@ -217,13 +263,28 @@ label.information{
         color: red;
         font-size: 36px;
     }
+    .buy_choice{
+        margin-bottom: 10px;
+        border: 1px solid lightgray;
+        padding: 10px;
+        margin-top: 10px;
+        span.line{
+            display: flex;
+            padding-bottom: 10px;
+        }
+        span.line_under{
+            padding-left: 15px;
+            display: flex;
+            padding-bottom: 10px;
+        }
+    }
     span.old_price{
         color: gray;
     }
 }
 .premium_information_two{
     padding: 10px;
-    background-color: purple;
+    background-color: rgb(71, 26, 123);
     align-items: center;
     display: grid;
     margin-top: 10px;
@@ -231,8 +292,8 @@ label.information{
     span{
         background-color: yellow;
         color: black;
-        padding: 5px;
         margin: 10px;
+        padding: 12px 2px;
         border-radius: 40px;
     }
     .premium_information_block{
@@ -273,9 +334,26 @@ label.information{
 }
 .buy_information{
     padding-top: 10px;
+    display: flex;
     img{
         width: 48px;
         padding: 5px;
+    }
+    .box{
+        padding: 6px;
+        border-radius: 5px;
+        background-color: #fafafa;
+        margin-left: 5px;
+        text-align: center;
+        p{
+            font-size: 7px;
+            padding-bottom: 5px;
+        }
+        span.b{
+            border-radius: 50%;
+            padding: 2px 5px;
+            background-color: #fed44b;
+        }
     }
 }
 .basket_choice{

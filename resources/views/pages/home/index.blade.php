@@ -200,7 +200,7 @@
         <div class="content">
             <div class="slider_container">
                 <i class="fas fa-chevron-left left_arrow"></i>
-                <img src="{{asset('res/slider_one.jpg')}}" alt="" class="slider">
+                <img src="{{asset('res_css/slider_one.jpg')}}" alt="" class="slider">
                 <i class="fas fa-chevron-right right_arrow"></i>
             </div>
             <div class="last_product part_product">
@@ -208,7 +208,7 @@
                 <div class="cardList">
                     <div class="card">
                         <i class="far fa-heart"></i>
-                        <img src="{{asset('res/product/140996700.jpg')}}" alt="">
+                        <img src="{{asset('res_css/product/140996700.jpg')}}" alt="">
                         <a href="{{route('product')}}">Кресло игровое GamePro Hero RGB</a>
                         <span>7 999 ₴</span>
                         <span>6 999 ₴</span>

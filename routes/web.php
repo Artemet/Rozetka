@@ -24,3 +24,6 @@ Route::get('/product', function (){
     return view("pages.product");
 })->name("product");
 Route::get('/category', [СategoryController::class, 'index']);
+Route::get('/pages', function (){
+    return view("pages.premium");
+})->name("pages");

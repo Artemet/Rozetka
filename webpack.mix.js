@@ -16,4 +16,6 @@ mix.js('resources/js/app.js', 'public/js')
 
     ]);
 mix.sass('resources/scss/app.scss','public/css')
-    .postCss('resources/css/reset.css', 'public/css');
+    .postCss('resources/css/reset.css', 'public/css')
+    .copyDirectory('resources/res_css','public/res_css')
+;
