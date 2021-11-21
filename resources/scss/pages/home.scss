@@ -10,7 +10,7 @@ body{
     display: grid;
     padding-top: 5px;
     padding-left: 10px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     img.slider{
         width: 100%;
         padding-top: 20px;

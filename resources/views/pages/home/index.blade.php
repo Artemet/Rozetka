@@ -1,6 +1,9 @@
 @extends('layout.app')
 @section('title', 'rozetka')
 @section('content')
+    @foreach($get_product as $item)
+        <span>{{$item->name}}</span>
+    @endforeach
     <div class="veb_part_container">
         <div class="sub_container">
             <div class="sub_app_button">
@@ -145,7 +148,8 @@
                 <a class="network" href="https://www.instagram.com/rozetkaua/">
                     <i class="fab fa-instagram-square instagram"></i>
                 </a>
-                <a class="network" href="https://invite.viber.com/?g2=AQB9mwM%2F5f%2FxJUlMxP4V9flr2%2BvXTC1MpxdGFZ0P6d%2Fs6Ws%2FFe%2FQtLiZwA4E28sj&lang=ru">
+                <a class="network"
+                   href="https://invite.viber.com/?g2=AQB9mwM%2F5f%2FxJUlMxP4V9flr2%2BvXTC1MpxdGFZ0P6d%2Fs6Ws%2FFe%2FQtLiZwA4E28sj&lang=ru">
                     <i class="fab fa-viber viber"></i>
                 </a>
                 <a class="network" href="https://t.me/rrozetka">
@@ -186,7 +190,8 @@
             </div>
             <div class="payment_container_information">
                 <button class="payment">
-                    <img src="https://xl-static.rozetka.com.ua/assets/img/design/mastercard-logo.svg" alt="" class="payment">
+                    <img src="https://xl-static.rozetka.com.ua/assets/img/design/mastercard-logo.svg" alt=""
+                         class="payment">
                 </button>
                 <button class="payment">
                     <img src="https://xl-static.rozetka.com.ua/assets/img/design/visa-logo.svg" alt="" class="payment">
@@ -209,8 +214,14 @@
                     <div class="card">
                         <i class="far fa-heart"></i>
                         <img src="{{asset('res_css/product/140996700.jpg')}}" alt="">
-                        <a href="{{route('product')}}">Кресло игровое GamePro Hero RGB</a>
-                        <span>7 999 ₴</span>
+                        <a href="{{route('product')}}">
+                            @foreach($get_product as $item)
+                                <span>{{$item->name}}</span>
+                            @endforeach
+                        </a>
+                        @foreach($get_product as $item)
+                            <span>{{$item->price}}</span>
+                        @endforeach
                         <span>6 999 ₴</span>
                     </div>
                 </div>
